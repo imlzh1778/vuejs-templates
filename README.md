@@ -5,21 +5,16 @@
 
 ### 使用
 ``` bash
-# 设置npm源地址指向内部
-$ npm install -g nrm 
-$ nrm add oa http://192.168.44.125:9000/ 
-$ nrm use oa
-# 可查看是否设置成功
-$ nrm ls 
-
 # 安装vue-cli
 $ npm install -g vue-cli
+
+git clone https://github.com/imlzh1778/vuejs-templates.git
 
 # 获取模版  -template 支持选项
 #  |-Project name 项目名称
 #  |-Use i18n to your code? 国际化
 #  |-Use login page? 登录页、路由权限
-$ vue init gitlab:https://github.com/imlzh1778/vuejs-templates project-template
+$ vue init /Users/lee/vuejs-templates project-template
 
 # 初始化
 $ cd project-template
