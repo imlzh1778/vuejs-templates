@@ -19,7 +19,7 @@ $ npm install -g vue-cli
 #  |-Project name 项目名称
 #  |-Use i18n to your code? 国际化
 #  |-Use login page? 登录页、路由权限
-$ vue init gitlab:http://192.168.44.125:F2E/vuejs-templates project-template
+$ vue init gitlab:https://github.com/imlzh1778/vuejs-templates project-template
 
 # 初始化
 $ cd project-template
