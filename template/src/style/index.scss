@@ -1,0 +1,80 @@
+/**
+* 极少更改 打包合并至vendor
+* page-layout 只书写骨架样式
+*/
+@import "~variable";
+@import "base/mixin";
+// reset
+@import "base/normalize";
+@import "base/utilities";
+
+// page-layout
+body {
+    height: 100%;
+}
+
+.container {
+    width: $min-width;
+    margin-right: auto;
+    margin-left: auto;
+    &.auto {
+        width: auto;
+    }
+}
+
+.page-main {
+    $header-height: 75px;
+    $footer-height: 65px;
+    height: 100%;
+    > .main-view {
+        min-height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: $header-height;
+        margin-top: -$header-height;
+        padding-bottom: $footer-height + 20;
+        margin-bottom: -$footer-height;
+    }
+    > .header {
+        background: #FAFAFA;
+        height: $header-height;
+        box-sizing: border-box;
+        border-bottom: #E5E5E5 1px solid;
+        .logo {
+            float: left;
+            margin: 15px 50px 0 0;
+        }
+        .nav {
+            overflow: hidden;
+            line-height: $header-height - 2px;
+            .item {
+                float: left;
+                font-size: 18px;
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            .item-link {
+                display: block;
+                padding: 0 20px;
+                border-bottom: 2px solid transparent;
+            }
+            .router-link-active {
+                border-bottom-color: $color-primary;
+            }
+            .user-name {
+                display: inline-block;
+                margin-right: 7px;
+            }
+        }
+    }
+    > .footer {
+        margin-top: -$footer-height;
+        height: $footer-height;
+        background-color: #FAFAFA;
+        border-top: #E5E5E5 1px solid;
+        padding-top: 15px;
+        box-sizing: border-box;
+    }
+}

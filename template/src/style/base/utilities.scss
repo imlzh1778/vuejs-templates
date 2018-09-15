@@ -1,0 +1,85 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+.clearfix {
+    @include clearfix;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+// text
+// ---------------------
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-link {
+    color: $text-color;
+    &:hover {
+        color: $text-color;
+    }
+}
+
+.inherit-link {
+    color: inherit;
+    &:hover {
+        color: inherit;
+    }
+}
+
+// ------------------------------------------
+
+.color-primary {
+    color: $color-primary;
+}
+
+.color-success {
+    color: $color-success;
+}
+
+.color-warning {
+    color: $color-warning;
+}
+
+.color-danger {
+    color: $color-danger;
+}
+
+// ---------------------------------------
+.block {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.auto-width {
+    width: auto !important;
+}
+
+.v-middle {
+    vertical-align: middle;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+// --------------------
+@include utilities;
