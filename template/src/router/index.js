@@ -20,7 +20,7 @@ let oRouter = new Router({
         name: 'login',
         meta: {auth: false, template: 'full'},
         beforeEnter (to, from, next) {
-            axios.get('/hunter/sessionObj.api').then(data => {
+            axios.get('/hunter/sessionObj.api', {timeout: 1000 * 5}).then(data => {
                 if (data.status) {
                     store.commit('USER_SIGN_IN', data.result.bean);
                     store.commit('APP', data.result.SESSION_OTHER);
