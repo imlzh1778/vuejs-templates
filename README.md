@@ -1,5 +1,5 @@
 ## 介绍
-> 一个功能完整的前端架构体系，提供快速开始的项目开发模板。
+> 一个功能完整的前端架构体系，提供快速开始的项目开发模板。 
 >   - 开发上提供babel hot-reload eslint sass http-proxy minified extract-text ...
 >   - 项目上提供换肤功能(皮肤编译)、国际化、CSS布局模版 内部包管理
 
